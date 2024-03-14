@@ -1,0 +1,97 @@
+@media screen and (max-width: 769px) {
+    #gnb {
+        display: none;
+    }
+
+    #intro .left {
+        left: 15%;
+        font-size: 3em;
+    }
+
+    #intro .right {
+        right: 15%;
+        font-size: 3em;
+    }
+
+    #intro>ul {
+        width: 40%;
+    }
+
+    #about .face {
+        width: 250px;
+        height: 250px;
+        margin: 2% auto;
+    }
+
+    #about .face .circle {
+        width: 220px;
+        height: 220px;
+    }
+
+    #about .sen1 {
+        top: 52%;
+        left: 21%;
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+
+    #about .sen2 {
+        top: 65%;
+        left: 23%;
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+
+    #about .sen3 {
+        top: 78%;
+        left: 25%;
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+
+    #about .wit {
+        display: none;
+    }
+
+    #skill>ul>li>ul>li {
+        font-size: 1.3rem;
+        padding: 1% 5% 1%;
+    }
+
+    #project>div {
+        width: 90%
+    }
+
+    .skill,
+    .sentence {
+        display: none;
+    }
+    #project .project .fullpage {
+        width: 80%;
+        height: 190%;
+       
+    }
+    #project .project .tabWrap {
+        width: 80%;
+        height: 20px;
+        margin: 1% auto;
+    }
+    #project .project .tab {
+        height: 20px;
+        
+    }
+    #project .project>.btn {
+        width: 80%;
+        margin: 1% auto;
+        font-size: 1.1rem;
+    }
+
+    #project .project>.btn>button {
+        width: 30%;
+        height: 20px;
+        margin-right: 1%;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+
+}

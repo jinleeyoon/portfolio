@@ -1,0 +1,67 @@
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    #intro .left {
+        left: 15%;
+    }
+
+    #intro .right {
+        right: 15%;
+    }
+
+    #about .face {
+        margin-top: 5%;
+        margin-left: 5%;
+        width: 280px;
+        height: 280px;
+    }
+
+    #about .face .circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    #about .sen1 {
+        top: 3%;
+        right: 15%;
+    }
+
+    #about .sen2 {
+        right: 10%;
+    }
+
+    #about .sen3 {
+        top: 38%;
+        right: 5%;
+    }
+
+    #about .wit {
+        top: 60%;
+        left: 5%;
+    }
+
+    #project {
+        margin-top: 5%;
+    }
+
+    #project>div {
+        height: 80vh;
+        width: 95%;
+    }
+
+    #project .project .fullpage {
+        height: 130%;
+    }
+
+    #project .project .tabWrap {
+        height: 30px;
+       
+    }
+    #project .project .tab {
+        height: 30px;
+       
+    }
+    #contact form p{
+        width: 70%;
+        height: 30px;
+        margin: 15% auto;
+    }
+}

@@ -1,0 +1,384 @@
+.clearFix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    font-family: 'SUITE', sans-serif;
+    background-color: #000D09;
+    color: white;
+}
+
+header {
+    max-width: 1440px;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 30;
+}
+
+#logo {
+    float: left;
+    margin-left: 10%;
+    font-size: 3rem;
+    line-height: 80px;
+}
+
+#gnb {
+    float: right;
+    margin-right: 10%;
+    width: 40%;
+}
+
+#gnb>ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#gnb>ul>li {
+    line-height: 80px;
+    font-size: 1.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+#gnb>ul .line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0%;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(to right, #69A660, #014017);
+    animation: lining 1s linear 1;
+}
+
+@keyframes lining {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+#intro {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #000D09 60%, #014017);
+    position: relative;
+}
+
+#intro .left {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    font-size: 5em;
+    font-weight: 600;
+}
+
+#intro .right {
+    position: absolute;
+    top: 45%;
+    right: 25%;
+    font-size: 5em;
+    font-weight: 600;
+}
+
+#intro>ul {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#about {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#about .face {
+    margin-top: 10%;
+    margin-left: 20%;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    /* margin: 10px; */
+    border: 5px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#000D09, #000D09),
+        linear-gradient(to right, #69A660 0%, #014017 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+#about .face .circle {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-image: url(../images/A8D43A9D-C9B9-480D-AF49-2AB52262C5CB-1427-00000102DB77F3FA.jpg);
+    background-size: 120%;
+    background-position: 50% 20%;
+}
+
+#about .sen1 {
+    position: absolute;
+    top: 5%;
+    right: 20%;
+    font-size: 2rem;
+    line-height: 40px;
+}
+
+#about .sen1>span {
+    font-weight: 800;
+    background: linear-gradient(to right, #69A660, #014017);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#about .sen2 {
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    font-size: 2rem;
+    line-height: 40px;
+}
+
+#about .sen3 {
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    font-size: 2rem;
+    line-height: 40px;
+}
+
+#about .wit {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    font-size: 2rem;
+    line-height: 40px;
+}
+
+#about .wit>span {
+    font-weight: 800;
+}
+
+#skill {
+    width: 100%;
+    height: 100vh;
+}
+
+#skill h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#skill>ul {
+    margin: 3% auto 0;
+    width: 80%;
+    position: relative;
+}
+
+#skill>ul>li>p {
+    font-size: 1.8rem;
+    background-color: #000D09;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+#skill>ul>li>ul {
+    border: 3px solid transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-image: linear-gradient(to right, #69A660 0%, #014017 100%);
+    border-image-slice: 1;
+
+}
+
+#skill>ul>li>ul>li {
+
+    font-size: 2.3rem;
+    padding: 1% 5% 1%;
+}
+
+#project {
+    width: 100%;
+    height: 100vh;
+}
+
+#project h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#project>div {
+    overflow: hidden;
+    height: 80vh;
+    width: 80%;
+    margin: 2% auto;
+}
+
+#project>div>ul {
+    /* width: 500%; */
+    display: flex;
+}
+
+#project>div>ul>li {
+    width: 100%;
+    height: 100%;
+    flex:  0 0 auto;
+
+}
+
+#project .project .fullpage {
+    width: 60%;
+    height: 150%;
+    background-color: aliceblue;
+    margin: 0 auto;
+}
+
+#project .project .tabWrap {
+    width: 60%;
+    height: 60px;
+    margin: 1% auto;
+}
+
+#project .project .tab {
+    width: 15%;
+    height: 60px;
+    float: left;
+    margin-right: 2%;
+    background-position: center;
+    cursor: pointer;
+    background-size: cover;
+}
+
+#project .project .skill {
+    width: 60%;
+    margin: 0.5% auto;
+    font-size: 1.5rem;
+
+}
+
+#project .project .sentence {
+    width: 60%;
+    margin: 0.5% auto;
+    font-size: 1.1rem;
+}
+
+#project .project>.btn {
+    width: 60%;
+    margin: 1% auto;
+    font-size: 1.1rem;
+}
+
+#project .project>.btn>button {
+    width: 15%;
+    height: 30px;
+    margin-right: 1%;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(75deg, #69A660, #014017);
+    cursor: pointer;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.btnWrap {
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+#project1 .tab1 {
+    background-image: url(../images/projectlego1.png);
+}
+
+#project1 .tab2 {
+    background-image: url(../images/projectlego2.png);
+}
+
+#project1 .tab3 {
+    background-image: url(../images/projectlego3.png);
+}
+
+#project1 .tab4 {
+    background-image: url(../images/projectlego4.png);
+}
+
+#project1 .tab5 {
+    background-image: url(../images/projectlego5.png);
+
+}
+
+#project2 .tab1 {
+    background-image: url(../images/projectzoon.png);
+}
+
+#project2 .tab2 {
+    background-image: url(../images/projectzoon2.png);
+}
+
+
+
+
+
+
+#contact {
+    width: 100%;
+    height: 100vh;
+}
+
+#contact h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#contact form {
+    width: 60%;
+    margin: 1% auto;
+}
+
+#contact form p {
+    width: 70%;
+    height: 80px;
+    margin: 2% auto;
+}
+
+#contact form p>strong {
+    font-size: 2rem;
+    line-height: 60px;
+    display: block;
+}
+
+#contact form p>input {
+    width: 90%;
+    height: 50px;
+    margin-top: -2%;
+}
+
+#contact form p>input::placeholder {
+    font-size: 3rem;
+}
