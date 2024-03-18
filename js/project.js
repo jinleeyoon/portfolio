@@ -13,6 +13,7 @@ function showCurrent() {
 function next() {
    currentIndex = (currentIndex + 1) % totalItems;
    showCurrent();
+  
 }
 function prev() {
    currentIndex = (currentIndex - 1 + totalItems) % totalItems;

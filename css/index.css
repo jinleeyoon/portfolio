@@ -54,6 +54,7 @@ header {
     width: 100%;
     background: linear-gradient(to right, #69A660, #014017);
     animation: lining 1s linear 1;
+
 }
 
 @keyframes lining {
@@ -79,6 +80,19 @@ header {
     left: 25%;
     font-size: 5em;
     font-weight: 600;
+    animation: fadeInLeft 1s linear 1
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
 }
 
 #intro .right {
@@ -87,6 +101,19 @@ header {
     right: 25%;
     font-size: 5em;
     font-weight: 600;
+    animation: fadeInRight 1s linear 1
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(200%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
 }
 
 #intro>ul {
@@ -97,7 +124,59 @@ header {
     width: 30%;
     display: flex;
     justify-content: space-evenly;
+   
 
+}
+
+#intro>ul>li {
+    animation: bounce 0.5s ease-out 1 alternate;
+    animation-delay: 5s;
+}
+
+#intro>ul>li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+#intro>ul>li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#intro>ul>li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+#intro>ul>li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+#intro>ul>li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+#intro>ul>li:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+#intro>ul>li:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+#intro>ul>li:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+#intro>ul>li:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+@keyframes bounce {
+    0% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: 30px;
+    }
 }
 
 #about {
@@ -244,17 +323,39 @@ header {
 #project>div>ul>li {
     width: 100%;
     height: 100%;
-    flex:  0 0 auto;
+    flex: 0 0 auto;
 
+}
+
+.projects {
+    display: flex;
+    transition: transform 0.5s ease; /* 캐러셀 이동에 부드러운 효과를 주기 위한 transition 추가 */
 }
 
 #project .project .fullpage {
     width: 60%;
-    height: 150%;
-    background-color: aliceblue;
+    height: 300px;
+    /* background-color: aliceblue; */
     margin: 0 auto;
+   
+    background-position: center;
+    background-size: cover;
 }
-
+#project #project1 .fullpage{
+    background-image: url(../images/projectlego1.png);
+}
+#project #project2 .fullpage{
+    background-image: url(../images/projectzoon.png);
+}
+#project #project3 .fullpage{
+    background-image: url(../images/projectgame1.png);
+}
+#project #project4 .fullpage{
+    background-image: url(../images/projecttodo.png);
+}
+#project #project5 .fullpage{
+    background-image: url(../images/projectpic.png);
+}
 #project .project .tabWrap {
     width: 60%;
     height: 60px;
@@ -303,11 +404,18 @@ header {
 }
 
 .btnWrap {
-    margin: 0 auto;
+    position: relative;
+    margin: -20% auto;
     width: 75%;
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
+}
+.btnWrap .btn{
+    cursor: pointer;
+}
+.btnWrap .btn:hover{
+    color: #69A660;
 }
 
 #project1 .tab1 {
@@ -337,6 +445,16 @@ header {
 
 #project2 .tab2 {
     background-image: url(../images/projectzoon2.png);
+}
+
+#project3 .tab1 {
+    background-image: url(../images/projectgame1.png);
+}
+#project4 .tab1{
+    background-image: url(../images/projecttodo.png);
+}
+#project5 .tab1{
+    background-image: url(../images/projectpic.png);
 }
 
 
