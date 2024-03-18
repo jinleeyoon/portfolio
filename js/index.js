@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
     let scroll = window.scrollY || window.pageYOffset;
 
-    if (scroll > 10) {
+    if (scroll > 0) {
       header.classList.add("current");
     } else {
       header.classList.remove("current");
