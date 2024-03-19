@@ -20,7 +20,7 @@
     #about .face {
         width: 250px;
         height: 250px;
-        margin: 2% auto;
+        margin: 5% auto 0;
     }
 
     #about .face .circle {
@@ -29,23 +29,23 @@
     }
 
     #about .sen1 {
-        top: 52%;
-        left: 21%;
-        font-size: 1.3rem;
+        top: 58%;
+        left: 10%;
+        font-size: 1.2rem;
         line-height: 30px;
     }
 
     #about .sen2 {
-        top: 65%;
-        left: 23%;
-        font-size: 1.3rem;
+        top: 69%;
+        left: 10%;
+        font-size: 1.2rem;
         line-height: 30px;
     }
 
     #about .sen3 {
-        top: 78%;
-        left: 25%;
-        font-size: 1.3rem;
+        top: 85%;
+        left: 10%;
+        font-size: 1.2rem;
         line-height: 30px;
     }
 
