@@ -1,9 +1,10 @@
-let bigPic1 = document.querySelector(".project>.fullpage");
-let bigPic2 = document.querySelector(".project>.fullpage");
+let bigPic1 = document.querySelector("#project1>.fullpage");
+let bigPic2 = document.querySelector("#project2>.fullpage");
 let smallPic = document.querySelectorAll(".tab");
 
 for (let i = 0; i < smallPic.length; i++) {
   smallPic[i].addEventListener("click", changePic);
+
 }
 
 function changePic() {

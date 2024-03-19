@@ -59,27 +59,32 @@
     }
 
     #project>div {
-        width: 90%
+        width: 90%;
+        height: 700px;
     }
 
     .skill,
     .sentence {
         display: none;
     }
+
     #project .project .fullpage {
         width: 80%;
         height: 190%;
-       
+
     }
+
     #project .project .tabWrap {
         width: 80%;
         height: 20px;
         margin: 1% auto;
     }
+
     #project .project .tab {
         height: 20px;
-        
+
     }
+
     #project .project>.btn {
         width: 80%;
         margin: 1% auto;
