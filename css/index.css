@@ -285,7 +285,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border-image: linear-gradient(to right, #69A660 0%, #014017 100%);
+    border-image: linear-gradient(75deg, #9add8f 0%, #014017 100%);
     border-image-slice: 1;
 
 }
