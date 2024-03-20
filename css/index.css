@@ -1,9 +1,5 @@
-@font-face {
-    font-family: 'SUITE-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+
 .clearFix::after {
     content: "";
     display: block;
@@ -11,10 +7,11 @@
 }
 
 body {
-    font-family: 'SUITE', sans-serif;
+    font-family: "Noto Serif KR", serif;
     background-color: #000D09;
     color: white;
 }
+
 
 header {
     max-width: 1440px;
@@ -131,7 +128,7 @@ header {
     width: 30%;
     display: flex;
     justify-content: space-evenly;
-   
+
 
 }
 
@@ -336,7 +333,8 @@ header {
 
 .projects {
     display: flex;
-    transition: transform 0.5s ease; /* 캐러셀 이동에 부드러운 효과를 주기 위한 transition 추가 */
+    transition: transform 0.5s ease;
+    /* 캐러셀 이동에 부드러운 효과를 주기 위한 transition 추가 */
 }
 
 #project .project .fullpage {
@@ -346,21 +344,27 @@ header {
     background-position: center;
     background-size: cover;
 }
-#project #project1 .fullpage{
+
+#project #project1 .fullpage {
     background-image: url(../images/projectlego1.png);
 }
-#project #project2 .fullpage{
+
+#project #project2 .fullpage {
     background-image: url(../images/projectzoon.png);
 }
-#project #project3 .fullpage{
+
+#project #project3 .fullpage {
     background-image: url(../images/projectgame1.png);
 }
-#project #project4 .fullpage{
+
+#project #project4 .fullpage {
     background-image: url(../images/projecttodo.png);
 }
-#project #project5 .fullpage{
+
+#project #project5 .fullpage {
     background-image: url(../images/projectpic.png);
 }
+
 #project .project .tabWrap {
     width: 60%;
     height: 60px;
@@ -416,10 +420,12 @@ header {
     justify-content: space-between;
     font-size: 2rem;
 }
-.btnWrap .btn{
+
+.btnWrap .btn {
     cursor: pointer;
 }
-.btnWrap .btn:hover{
+
+.btnWrap .btn:hover {
     color: #69A660;
 }
 
@@ -455,10 +461,12 @@ header {
 #project3 .tab1 {
     background-image: url(../images/projectgame1.png);
 }
-#project4 .tab1{
+
+#project4 .tab1 {
     background-image: url(../images/projecttodo.png);
 }
-#project5 .tab1{
+
+#project5 .tab1 {
     background-image: url(../images/projectpic.png);
 }
 
